@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <title>Calculator Chirie</title>
+</head>
+<body>
+   <h1>Calculator Chirie</h1>
+   <form id="rentCalculator">
+       <div class="form-group">
+           <label for="salary">Salariu lunar (RON):</label>
+           <small>Salariul tău lunar, folosit pentru calcularea procentului chiriei.</small>
+           <input type="number" id="salary" required>
+       </div>
+
+       <div class="form-group">
+           <label for="baseRent">Chirie lunară de bază (RON):</label>
+           <small>Suma de bani pe care o plătești lunar pentru închirierea locuinței fără alte costuri adiționale.</small>
+           <input type="number" id="baseRent" required>
+       </div>
+
+       <div class="form-group">
+           <label for="utilities">Utilități (RON):</label>
+           <small>Costul lunar al utilităților, cum ar fi electricitatea, apa, căldura, etc.</small>
+           <input type="number" id="utilities">
+       </div>
+
+       <div class="form-group">
+           <label for="hoaFees">Taxe asociație proprietari (RON):</label>
+           <small>Contribuția lunară la cheltuielile asociației de proprietari pentru întreținerea comună a proprietății.</small>
+           <input type="number" id="hoaFees">
+       </div>
+
+       <div class="form-group">
+           <label for="internet">Internet (RON):</label>
+           <small>Costul lunar al serviciilor de internet.</small>
+           <input type="number" id="internet">
+       </div>
+
+       <div class="form-group">
+           <label for="parking">Parcare (RON):</label>
+           <small>Costul lunar al unui loc de parcare, dacă este cazul.</small>
+           <input type="number" id="parking">
+       </div>
+
+       <!-- Alte câmpuri pentru cheltuielile de chirie -->
+
+       <!-- Afișează totalul în RON și subtotalul în EURO -->
+       <h2>Total chirie: <span id="totalRent">0 RON</span></h2>
+       <h2>Total chirie (EUR): <span id="subtotalEuro">0 EUR</span></h2>
+       <h2>Procent din salariu: <span id="percentage">0%</span></h2>
+   </form>
+
+   <script src="script.js"></script>
+</body>
+</html>
